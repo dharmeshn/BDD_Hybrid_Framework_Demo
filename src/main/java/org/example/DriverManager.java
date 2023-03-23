@@ -19,10 +19,10 @@ public class DriverManager extends Utils {
     public static final String AUTOMATE_KEY = LoadProp.getProperty("BROWSERSTACK_ACCESS_KEY");
     public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY +
             "@hub-cloud.browserstack.com/wd/hub";
-    boolean runIncloud = Boolean.parseBoolean(LoadProp.getProperty("Cloud"));
-//    boolean runIncloud = Boolean.parseBoolean(System.getProperty("Cloud"));
-    String browserName = LoadProp.getProperty("Browser");
-//    String browserName = System.getProperty("Browser");
+//    boolean runIncloud = Boolean.parseBoolean(LoadProp.getProperty("Cloud"));
+    boolean runIncloud = Boolean.parseBoolean(System.getProperty("Cloud"));
+//    String browserName = LoadProp.getProperty("Browser");
+    String browserName = System.getProperty("Browser");
 
     MutableCapabilities capabilities = new MutableCapabilities();
 
@@ -73,7 +73,7 @@ public class DriverManager extends Utils {
             if (browserName.equalsIgnoreCase("Chrome")) {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("--remote-allow-origins=*");
-                // assign value to driver varible as a chrome driver to perform task in Chrome browser
+                // assign value to driver variable as a chrome driver to perform task in Chrome browser
                 driver = new ChromeDriver(chromeOptions);
             } else if (browserName.equalsIgnoreCase("Edge")) {
                 driver = new EdgeDriver();

@@ -40,6 +40,7 @@ public class Homepage extends Utils{
     }
 
     public void userShouldNavigateToCustomerInfoPage(){
+        waitForUrlToBe(LoadProp.getProperty("Homepage_url"), 60);
         clickOnElement(_myAccount);
     }
 
