@@ -48,10 +48,10 @@ public class DriverManager extends Utils {
                     throw new RuntimeException(e);
                 }
 
-            } else if (browserName.equalsIgnoreCase("Firefox")) {
+            } else if (browserName.equalsIgnoreCase("Chrome")) {
                 ///connect with browserstack
-                capabilities.setCapability("browserName", "firefox");
-                capabilities.setCapability("browserVersion", "106.0");
+                capabilities.setCapability("browserName", "Chrome");
+                capabilities.setCapability("browserVersion", "109.0");
                 HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
                 browserstackOptions.put("os", "Windows");
                 browserstackOptions.put("osVersion", "10");

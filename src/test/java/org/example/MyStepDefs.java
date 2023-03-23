@@ -27,6 +27,7 @@ public class MyStepDefs {
         homepage.verifyUserIsOnHomepage();
         homepage.userShouldNavigateToLoginPage();
     }
+
     @When("user enter valid username and password and click on login button")
     public void user_enter_valid_username_and_password_and_click_on_login_button() {
         loginPage.verifyUserIsOnLoginPage();
@@ -135,4 +136,11 @@ public class MyStepDefs {
     public void orderShouldBePlacedAndOrderProcessedMessageShouldDisplay() {
         checkOutPage.orderShouldBePlacedAndOrderProcessedMessageShouldDisplay();
     }
+
+
+//    @When("user enter valid {string} and {string} and click on login button")
+//    public void userEnterValidAndAndClickOnLoginButton(String email, String password) {
+//        loginPage.verifyUserIsOnLoginPage();
+//        loginPage.userShouldAbleToLogin();
+//    }
 }

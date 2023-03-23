@@ -9,12 +9,12 @@ import org.junit.runner.RunWith;
                 features = ".",
                 dryRun = false,
                 monochrome = true,
-                tags = "@e2e",
-                plugin = {"pretty", "json:target/cucumber-reports/cucumber.json",
-                                    "html:target/cucumber-reports/cucumber-reports.html"},
+                tags = "@login",
+                plugin = {"pretty", "json:target/CucumberTestReport.json",
+                                    "html:target/CucumberTestReport.html"},
                 publish = true
                 )
 
-public class TestRunner {
+public class RunCucumberTest {
 
 }

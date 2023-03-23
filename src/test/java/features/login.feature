@@ -14,3 +14,4 @@ Feature: As a registered user, user want to login,
     Then user should navigate to customer change password page
     When user enter old and new password details and click on change password button
     Then user should able to change password successfully
+
