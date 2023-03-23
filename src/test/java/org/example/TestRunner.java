@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
                 dryRun = false,
                 monochrome = true,
                 tags = "@e2e",
-                plugin = {"pretty", "json:target/cucumber-reports/cucumber-reports.json",
+                plugin = {"pretty", "json:target/cucumber-reports/cucumber.json",
                                     "html:target/cucumber-reports/cucumber-reports.html"},
                 publish = true
                 )
